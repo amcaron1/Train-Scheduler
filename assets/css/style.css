@@ -1,0 +1,68 @@
+body{
+    background-image: url("../images/train1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+.main-wrapper{
+  background: white;
+  width: 100%;
+  border: solid 4px black;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.schedule-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+th{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.form-box{
+  width: 100%;
+  margin: 0px;
+  font-size: 14px;
+}
+
+label{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#first-train-hours{
+  width: 20%;
+  font-size: 14px;
+}
+
+#first-train-minutes{
+  width: 20%;
+  font-size: 14px;
+}
+
+#add-train{
+  float: right;
+  font-size: 14px;
+}

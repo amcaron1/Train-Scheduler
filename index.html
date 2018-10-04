@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrainScheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/train.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  </head>
+
+  <body>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-9 main-wrapper">
+                <h1 class="schedule-header">Train Scheduler</h1>
+
+                <div class="scheduleH">
+                    <h5>Current Train Schedule</h5>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                                <tbody id="display-trains"></tbody>                
+                        </table>                          
+                </div>
+            
+                <form id="train-form" class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="train-name">Train Name</label><br>
+                            <input type="text" class="form-box" id="train-name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="destinationH">Destination</label><br>
+                            <input type="text" class="form-box" id="destinationH">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="frequencyH">Frequency (min)</label><br>
+                            <input type="number" min="0" class="form-box" id="frequencyH">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="first-train-time">First Train Time (military time)</label><br>
+                            <input type="number" id="first-train-hours" placeholder="HH"
+                                min="00" max="23"> :
+                            <input type="number" id="first-train-minutes" placeholder="mm"
+                                min="0" max="59">
+                            <input id="add-train" type="submit" value="Add New Train">
+                        </div>
+                    </div>
+                  
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    
+  </body>
+</html>
