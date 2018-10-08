@@ -16,15 +16,15 @@ $(document).ready(function() {
     // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
     dataRef.ref().on("child_added", function(childSnapshot) {
 
-        // Logs everything that's coming out of snapshot
+        // Logs everything that's coming out of chileSnapshot
         console.log(childSnapshot.val().trainName);
         console.log(childSnapshot.val().destination);
         console.log(childSnapshot.val().firstTrainTime);
         console.log(childSnapshot.val().frequency);
 
-        // calls calcMinutesTillNextTrain to calculate when the next train arrives
+        // Calls function to calculate when the next train arrives
         var minutesTillNextArrivalTemp = calcMinutesTillTrain(childSnapshot.val().firstTrainTime, childSnapshot.val().frequency);
-        // adds minutesTillNextTrain to current time in order to find when next train will arrive
+        // Adds minutesTillNextTrain to current time in order to find when next train will arrive
         var nextArrivalTemp = moment().add(minutesTillNextArrivalTemp, "minutes").format("hh:mm A");
 
         // The rest of the function creates a new row in the table to display the train info
@@ -49,7 +49,9 @@ $(document).ready(function() {
         console.log("Errors handled: " + errorObject.code);
     });
 
+    // Calculates the number of minutes until the next train comes
     function calcMinutesTillTrain(firstTrainTimeL,frequencyL) {
+        // Handles the case where current time is before the first train time
         var firstTrainTimeConverted = moment(firstTrainTimeL, "HH:mm").subtract(1, "years");
         var diffTime = moment().diff(moment(firstTrainTimeConverted), "minutes");
         var remainder = diffTime % frequencyL;
