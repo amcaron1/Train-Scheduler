@@ -11,3 +11,7 @@
     - Use a table to display train information
     - Use a form to input data
     - Use a Firebase to store data
+
+- Links
+    - Deployed: https://amcaron1.github.io/Train-Scheduler/
+    - GitHub repository: https://github.com/amcaron1/Train-Scheduler/
