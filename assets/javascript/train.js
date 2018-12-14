@@ -16,7 +16,7 @@ $(document).ready(function() {
     // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
     dataRef.ref().on("child_added", function(childSnapshot) {
 
-        // Logs everything that's coming out of chileSnapshot
+        // Logs everything that's coming out of childSnapshot
         console.log(childSnapshot.val().trainName);
         console.log(childSnapshot.val().destination);
         console.log(childSnapshot.val().firstTrainTime);
