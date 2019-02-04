@@ -1,15 +1,29 @@
 # Train-Scheduler
 
-- Overview
-    - Display stored train records from database
-    - Allow user to create new train records
-    - Validate user input
+Overview
 
-- Key or new skills
-    - Use a table to display train information
-    - Use a form to input data
-    - Use Firebase to store data
+A dynamically updated train schedule that displays train routes from a database and allows for the creation of new routes.
 
-- Links
-    - Deployed: https://amcaron1.github.io/Train-Scheduler/
-    - GitHub repository: https://github.com/amcaron1/Train-Scheduler/
+Details
+- Display stored train records from database
+- Allow user to create new train records
+- Validate user input
+
+Train-Scheduler Links
+- Deployed code: https://amcaron1.github.io/Train-Scheduler/
+- GitHub repository: https://github.com/amcaron1/Train-Scheduler/
+
+Portfolio Links
+- Deployed code: https://amcaron1.github.io/Bootstrap-Portfolio/
+- GitHub repository: https://github.com/amcaron1/Bootstrap-Portfolio/
+
+Skills
+- HTML
+- Bootstrap
+- Javascript
+- jQuery
+- Firebase
+
+Sub-skills
+- Table
+- Form
